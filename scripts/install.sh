@@ -1,3 +1,5 @@
 #!/bin/bash
-cd /home/ubuntu/app
-npm install
+cd /home/ubuntu
+mkdir -p app
+cd app
+npm install || true
