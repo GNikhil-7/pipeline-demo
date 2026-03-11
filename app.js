@@ -1,7 +1,8 @@
-const https = require('https');
+require('dotenv').config();
+const http = require('http');
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://admin:Admin0207@confluxaa.iaafful.mongodb.net/test")
+mongoose.connect(process.env.MONGO_URI)
 .then(()=>console.log("MongoDB Connected"))
 .catch(err=>console.log(err));
 
