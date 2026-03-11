@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ubuntu
-mkdir -p app
-cd app
-npm install || true
+
+cd /home/ubuntu/pipeline-demo
+
+npm install
